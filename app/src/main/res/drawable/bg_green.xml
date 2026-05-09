@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!-- Set background to white -->
+    <solid android:color="#2EC4B6" />
+
+
+    <!-- Optional: Add a light gray border so it shows up on white screens -->
+    <stroke android:width="1dp" android:color="#EEEEEE" />
+</shape>

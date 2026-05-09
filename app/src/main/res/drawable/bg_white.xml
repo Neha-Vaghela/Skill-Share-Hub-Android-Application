@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Set background to white -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- Set the corner radius -->
+    <corners android:radius="16dp" />
+
+    <!-- Optional: Add a light gray border so it shows up on white screens -->
+    <stroke android:width="1dp" android:color="#EEEEEE" />
+</shape>
