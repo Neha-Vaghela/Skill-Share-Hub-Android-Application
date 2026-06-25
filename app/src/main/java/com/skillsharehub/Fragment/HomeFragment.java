@@ -37,7 +37,6 @@ public class HomeFragment extends Fragment {
         }
 
 
-
         // 4. Return the view
         return view;
     }
