@@ -183,7 +183,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="See all"
-                    android:textColor="#3B82F6"
+                    android:textColor="#3A86FF"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:gravity="end"
@@ -195,14 +195,14 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="24dp"
                 android:layout_marginHorizontal="16dp"
-                android:layout_marginTop="3dp">
+                android:layout_marginTop="3dp"
+                android:elevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="4dp"
-                    android:layout_marginTop="5dp">
+                    android:background="@drawable/bg_white">
 
                     <!-- Rank 1 -->
 
@@ -211,7 +211,8 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:weightSum="12"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:background="#26FFD700">
                         <ImageView
                             android:layout_width="20dp"
                             android:layout_height="30dp"
@@ -220,7 +221,7 @@
                         <TextView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:text="AM"
+                            android:text="NV"
                             android:textSize="13sp"
                             android:textStyle="bold"
                             android:background="@drawable/bg_green"
@@ -234,14 +235,12 @@
                             android:layout_weight="7"
                             android:layout_marginLeft="7dp">
                             <TextView
-                                android:id="@+id/topper1Name"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Neha Vaghela"
                                 android:textSize="16sp"
                                 android:textStyle="bold"/>
                             <TextView
-                                android:id="@+id/topper1Points"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Computer Engineering "
@@ -253,7 +252,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:gravity="end">
+                            android:gravity="end"
+                            android:paddingTop="5dp">
                             <com.google.android.material.card.MaterialCardView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -304,7 +304,8 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:weightSum="12"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:background="#0DA2A2A2">
                         <ImageView
                             android:layout_width="20dp"
                             android:layout_height="30dp"
@@ -313,7 +314,7 @@
                         <TextView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:text="AM"
+                            android:text="RS"
                             android:textSize="13sp"
                             android:textStyle="bold"
                             android:background="@drawable/bg_green"
@@ -327,14 +328,12 @@
                             android:layout_weight="7"
                             android:layout_marginLeft="7dp">
                             <TextView
-                                android:id="@+id/topper1Name"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Rahul Sharma"
                                 android:textSize="16sp"
                                 android:textStyle="bold"/>
                             <TextView
-                                android:id="@+id/topper1Points"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Information Technology "
@@ -399,7 +398,8 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:weightSum="12"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:background="#0DCD7F32">
                         <ImageView
                             android:layout_width="20dp"
                             android:layout_height="30dp"
@@ -442,7 +442,8 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="end"
-                            android:layout_marginTop="3dp">
+                            android:layout_marginTop="3dp"
+                            android:paddingBottom="5dp">
                             <com.google.android.material.card.MaterialCardView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -477,7 +478,7 @@
                                 android:backgroundTint="@color/blue"
                                 app:strokeColor="#DADADA"
                                 app:strokeWidth="1dp"
-                                app:cornerRadius="10dp"/>
+                                app:cornerRadius="10dp" />
 
                         </LinearLayout>
 
@@ -491,7 +492,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_margin="16dp">
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -509,6 +511,11 @@
                     android:layout_weight="7"/>
 
             </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"/>
 
         </LinearLayout>
 
