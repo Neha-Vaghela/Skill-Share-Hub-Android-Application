@@ -22,7 +22,6 @@
         android:layout_alignParentBottom="true"
         android:background="@color/white"
         app:menu="@menu/nav_item"
-        app:itemBackground="@drawable/nav_item_bg"
         app:itemRippleColor="@android:color/transparent"
         app:itemActiveIndicatorStyle="@null"
         app:itemTextColor="@color/nav_color"

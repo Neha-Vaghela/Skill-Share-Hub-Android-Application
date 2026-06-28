@@ -92,7 +92,7 @@ public class HomeFragment extends Fragment {
         snapHelper.attachToRecyclerView(feedack);
 
 
-
+        //which card currently show to the user
         LinearLayoutManager manager =
                 (LinearLayoutManager) feedack.getLayoutManager();
 

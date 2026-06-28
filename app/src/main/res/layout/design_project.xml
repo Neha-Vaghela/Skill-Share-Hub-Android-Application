@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <!-- Top -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Avatar -->
+            <TextView
+                android:id="@+id/txtAvatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="AM"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/bg_green"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:text="AI Chatbot with LangChain"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#222"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAuthor"
+                    android:text="by Arjun Mehta"
+                    android:textColor="#777"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtCategory"
+                android:text="AI/ML"
+                android:textSize="12sp"
+                android:textColor="#4A7DFF"
+                android:background="@drawable/bg_chip"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- Description -->
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Description..."
+            android:textColor="#666"
+            android:textSize="15sp"/>
+
+        <!-- Technologies -->
+
+        <LinearLayout
+            android:id="@+id/layoutTags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Python"
+                android:background="@drawable/bg_chip_gray"
+                android:padding="6dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:text="LangChain"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_chip_gray"
+                android:padding="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="OpenAI"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_chip_gray"
+                android:padding="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#808A9BB0"/>
+
+        <!-- Bottom -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_heart"/>
+
+                <TextView
+                    android:id="@+id/txtLikes"
+                    android:layout_marginStart="5dp"
+                    android:text="42"
+                    android:textColor="#8A9BB0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_github"/>
+
+            <TextView
+                android:text="Code"
+                android:textColor="#0D1B2A"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_share"/>
+
+            <TextView
+                android:text="Share"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8A9BB0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
