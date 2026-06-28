@@ -20,6 +20,7 @@ import com.skillsharehub.Fragment.ProfileFragment;
 import com.skillsharehub.Fragment.ProjectFragment;
 import com.skillsharehub.Fragment.ResourceFragment;
 import com.skillsharehub.FunctionalFragment.FeedbackFragment;
+import com.skillsharehub.FunctionalFragment.ShareResourceFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (id == R.id.project) {
                     loadFrag(new ProjectFragment(), true);
                 } else if (id == R.id.community) {
-                    loadFrag(new CommunityFragment(), true);
+                    loadFrag(new ShareResourceFragment(), true);
                 } else if (id == R.id.profile) {
                     loadFrag(new ProfileFragment(),true);
                 }

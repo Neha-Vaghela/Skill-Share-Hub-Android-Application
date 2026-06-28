@@ -21,6 +21,19 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     Context context;
     ArrayList<CategoryModel> list;
 
+    private OnCategoryClickListener listener;
+
+    public interface OnCategoryClickListener {
+        void onCategoryClick(String subject);
+    }
+    public CategoryAdapter(Context context,
+                           ArrayList<CategoryModel> list,
+                           OnCategoryClickListener listener) {
+
+        this.context = context;
+        this.list = list;
+        this.listener = listener;
+    }
     public CategoryAdapter(Context context, ArrayList<CategoryModel> list) {
         this.context = context;
         this.list = list;
@@ -62,6 +75,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
             model.setSelected(true);
             notifyDataSetChanged();
+            listener.onCategoryClick(model.getName());
         });
     }
 
