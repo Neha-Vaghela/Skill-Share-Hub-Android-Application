@@ -19,6 +19,7 @@ import com.skillsharehub.Fragment.HomeFragment;
 import com.skillsharehub.Fragment.ProfileFragment;
 import com.skillsharehub.Fragment.ProjectFragment;
 import com.skillsharehub.Fragment.ResourceFragment;
+import com.skillsharehub.FunctionalFragment.FeedbackFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 if (id == R.id.home) {
                     loadFrag(new HomeFragment(), false);
                 } else if (id == R.id.resources) {
-                    loadFrag(new ResourceFragment(), true);
+//                    loadFrag(new ResourceFragment(), true);
+                    loadFrag(new FeedbackFragment(),true);
                 } else if (id == R.id.project) {
                     loadFrag(new ProjectFragment(), true);
                 } else if (id == R.id.community) {
